@@ -9,10 +9,10 @@ const Navigation = ({
   onSidebarToggle
 }) => {
   const navItems = [
-    { id: 'dashboard', label: '🏠 Dashboard', icon: '🏠' },
-    { id: 'quiz', label: '📝 Quiz', icon: '📝' },
-    { id: 'progress', label: '📊 My Progress', icon: '📊' },
-    { id: 'chat', label: '🤖 Chat', icon: '🤖' }
+    { id: 'dashboard', label: 'Dashboard', icon: '🏠' },
+    { id: 'quiz', label: 'Quiz', icon: '📝' },
+    { id: 'progress', label: 'My Progress', icon: '📊' },
+    { id: 'chat', label: 'Chat', icon: '🤖' }
   ];
 
   return (
