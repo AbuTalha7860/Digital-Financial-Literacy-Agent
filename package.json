@@ -1,0 +1,44 @@
+{
+  "name": "digital-financial-literacy-agent",
+  "version": "1.0.0",
+  "description": "AI-powered educational platform for digital financial literacy",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "start": "concurrently \"npm run backend\" \"npm run ai-backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm start",
+    "ai-backend": "cd backend && node rag.js",
+    "frontend": "cd frontend && npm start",
+    "seed": "cd backend && node seed.js",
+    "build": "cd frontend && npm run build",
+    "test": "echo \"No tests specified\" && exit 0",
+    "dev": "npm run start"
+  },
+  "keywords": [
+    "financial-literacy",
+    "ai",
+    "education",
+    "react",
+    "nodejs",
+    "ibm-cloud",
+    "watsonx",
+    "cloudant"
+  ],
+  "author": "Digital Financial Literacy Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/digital-financial-literacy-agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/digital-financial-literacy-agent/issues"
+  },
+  "homepage": "https://github.com/yourusername/digital-financial-literacy-agent#readme"
+}
